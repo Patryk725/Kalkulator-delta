@@ -1,0 +1,135 @@
+:root{
+    --first-background: #333;    
+    --second-background: #222;
+    --custom-border-color: greenyellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    background-color: var(--second-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+fieldset{
+    border: 5px solid greenyellow;
+    padding: 2em;
+}
+
+button{
+    transition: all .2s ease-out;
+
+    background-color: var(--first-background);
+    color: whitesmoke;
+    padding: 1em;
+    border: 5px solid greenyellow;
+    margin: 1em;
+}
+
+button:hover{
+    transition: all .2s ease-out;
+
+    font-weight: bold;
+    letter-spacing: .1rem;
+    background-color: greenyellow;
+    color: var(--second-background);
+    border: 5px solid var(--first-background);
+}
+.both{
+    background-color: greenyellow;
+    color: var(--second-background);
+    font-weight: bolder;
+}
+.both:hover{
+    border: 5px solid darkolivegreen;
+}
+
+.clear::before{
+    content:'🧺';
+}
+
+button#darkmode{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 10rem;
+}
+button#darkmode::before{
+    content: '☀️';
+}
+button#darkmode:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+button.delta::before{
+    content: '🔺'
+}
+button.mzer::before{
+    content: '❌'
+}
+
+.input-delta{
+    background-color: var(--first-background)3;
+    color: whitesmoke;
+    padding: 1em;
+    border: 5px solid greenyellow;
+    width: 100%;
+    margin: .4em;
+}
+
+.input-delta:hover{
+    transition: all .2s ease-out;
+
+    border: 5px solid var(--first-background);
+    color: black;
+    background-color: greenyellow;
+
+}
+
+.input-delta:focus{
+    transform: scale(1.2);
+    background-color: greenyellow;
+    color: black;
+
+}
+
+/* Usuwa numerki w Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Usuwa numerki w Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 900px)
+{
+    body{
+        margin: 0;
+        flex-flow: column;
+        text-align: center;
+    }
+    button{
+        width: 100%;
+    }
+
+    button#darkmode{
+        position: relative;
+        width: 90vw;
+    }
+}

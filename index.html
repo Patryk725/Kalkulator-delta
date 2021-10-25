@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona pozwala na wydzielenie miejsc zerowych równania kwadratowego">
+
+    <title>Oblicz Deltę</title>
+
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+    <!-- Skrypt obliczający deltę 👇 -->
+
+    <legend><button class="delta" onclick="Delta.oblicz()">Oblicz Delte</button>
+        <button class="mzer" onclick="Delta.mZer()">Wyznacz miejsca zerowe</button>
+        <button class="both" onclick="Delta.both()">Oblicz deltę i miejsca zerowe</button>
+        <button  class="clear" onclick="Delta.clear()">Clear input field</button>
+
+    </legend>
+
+    <!-- Miejsce na dane -->
+    <div class="deltainfo">
+        <input class="input-delta" id="a" type="number" id="info" placeholder="wpisz tu 'a'" autofocus>
+        <input class="input-delta" id="b" type="number" id="info" placeholder="wpisz tu 'b'">
+        <input class="input-delta" id="c" type="number" id="info" placeholder="wpisz tu 'c'">
+    </div>
+    </fieldset>
+
+
+
+    <!-- Skrypt zmiany motywu 👇 -->
+    <!-- <button id="darkmode" onclick="darkmode()">Tryb Jasny</button> -->
+    <!-- Jednak go nie robię -->
+
+    <!-- Odnośniki do skryptów -->
+    <script src="./delta/delta.js"></script>
+    <script src="./darkmode/darkmode.js"></script>
+</body>
+</html>
