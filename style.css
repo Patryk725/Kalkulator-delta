@@ -97,6 +97,10 @@ button.mzer::before{
 
 }
 
+.deltainfo{
+    display: flex;
+
+}
 .input-delta:focus{
     transform: scale(1.05);
     background-color: greenyellow;
@@ -131,5 +135,11 @@ input[type=number] {
     button#darkmode{
         position: relative;
         width: 90vw;
+    }
+    body>fieldset{
+        border: none;
+    }
+    .deltainfo{
+        flex-direction: column;
     }
 }
