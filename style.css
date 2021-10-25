@@ -98,7 +98,7 @@ button.mzer::before{
 }
 
 .input-delta:focus{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: greenyellow;
     color: black;
 
